@@ -16,19 +16,28 @@
 
 body{
     font-family: 'Poppins',sans-serif;
+    
 }
 
-.conatainer{
+.title_header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+
+header{
+    
     max-width: 1240px;
     margin: auto;
-    background: var(--dark);
 }
-
+/* nav section  */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
+
+
 
 header nav .left {
     display: flex;
@@ -74,5 +83,70 @@ header nav .branding {
     background: transparent;
     border-color:var(--primary);
     color: var(--pure);
+    transition: all .3s ease;
+}
+
+
+/* hero section  */
+
+.hero{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero img{
+    width: 400px;
+}
+
+.left-hero{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-hero{
+    flex: 1;
+    color: var(--pure);
+    margin-top: -7rem;
+}
+
+
+.right-hero h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.right-hero h1{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.right-hero h1 span{
+    color: var(--primary);
+}
+
+.right-hero p{
+    line-height: 1.9;
+    margin-bottom: 2rem
+}
+
+.dowonlod-btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--primary);
+    border: 2px solid transparent;
+    background: transparent;
+    border-color:var(--primary);
+}
+
+.dowonlod-btn:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
     transition: all .3s ease;
 }
