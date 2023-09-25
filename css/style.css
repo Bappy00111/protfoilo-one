@@ -1,0 +1,78 @@
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.conatainer{
+    max-width: 1240px;
+    margin: auto;
+    background: var(--dark);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .left {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+    transition: all .3s ease;
+}
+
+header nav {
+    height: 80px;
+    
+}
+
+header nav .branding {
+    margin-right: 3rem;
+}
+
+.contact-button{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 2px solid transparent;
+}
+
+.contact-button:hover{
+    background: transparent;
+    border-color:var(--primary);
+    color: var(--pure);
+    transition: all .3s ease;
+}
